@@ -1,8 +1,6 @@
-# husky-demo
+# husky+commitlint+eslint集成git提交规范检查
 
 #### 介绍
-
-husky+commitlint集成githooks代码提交检查
 
 - husky：git提交时触发hooks
 - commitlint：对提交的内容做规范校验husky，主要对pre-commit和commit-msg钩子对校验。
@@ -83,7 +81,7 @@ npm i lint-staged -D
 ```json
  "scripts": {
     ...
-    "lint:eslint": "eslint  --fix --ext .ts,.js,.vue ./src ",
+    "lint:lint-staged": "lint-staged",
   },  
 
 "lint-staged": {
@@ -239,7 +237,7 @@ npm i cz-git -D
 ```bash
  "scripts": {
     ...
-    "lint:eslint": "eslint  --fix --ext .ts,.js,.vue ./src ",
+    "lint:lint-staged": "lint-staged",
     "commit": "git-cz"
   },  
 
@@ -254,5 +252,5 @@ npm i cz-git -D
 
 提交代码时，将git commit换成npm run commit就可以使用模版进行信息的提交了
 
-![image-20230429220407461](http://file.chenyx.site/image/202304292204489.png)
+![image-20230429224720795](http://file.chenyx.site/image/202304292247826.png)
 
