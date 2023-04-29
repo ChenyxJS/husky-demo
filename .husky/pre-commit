@@ -1,0 +1,11 @@
+###
+ # @Author: chenyx
+ # @Date: 2023-04-29 20:17:02
+ # @LastEditors: Do not edit
+ # @LastEditTime: 2023-04-29 21:58:19
+ # @FilePath: /husky-demo/.husky/pre-commit
+### 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint:lint-staged
